@@ -16,7 +16,7 @@ app.get('/fetch-url', async (req, res) => {
     const url = req.query.url;
 
     if (!url) {
-        return res.status(400).json({ error: 'URL is required' });
+        return res.status(200).json({ msg: 'URL is required' });
     }
 
     try {
